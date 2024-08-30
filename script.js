@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const instruccionesTextarea = document.getElementById('instrucciones')
     const listaRecursos = document.getElementById('recursoList');
     const filtros = {
-        nombre: document.getElementById('nombre'),
-        levels: document.getElementById('levels'),
-        categoria: document.getElementById('categoria')
+        nombre: document.getElementById('nombres'),
+        levels: document.getElementById('Filtrolevels'),
+        categoria: document.getElementById('Filtrocategoria')
     };
 
     function renderRecursos() {
