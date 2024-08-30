@@ -30,7 +30,7 @@ El encabezado contiene el título de la aplicación **GG**.
 
 Es donde se puede hacer la creacion de las recetas en un formulario desde el nombre, tipo, duraccion de coccion, entre muchos otros.
 
-![Main](<encabezado.png>)
+![Main](<main.png>)
 
 ### Filtros
 
@@ -42,7 +42,7 @@ La sección de filtros permite a los usuarios seleccionar diferentes categorias 
 
 Los resultados se muestran en una vista de tarjetas que ofrecen una visión general de las recetas seleccionadas. La interfaz es clara y permite a los usuarios interactuar fácilmente con los datos.
 
-![Resultados](<resultados.png>)
+![Resultados](<filtros.png>)
 
 
 ## Instalación
@@ -63,7 +63,7 @@ Aquí se muestran capturas de pantalla de la aplicación:
 
 - **Filtros y Resultados**:
 
-    ![Filtros y Resultados](<filtros-resultados.png>)
+    ![Filtros y Resultados](<filtros.png>)
 
 ## Autor
 
