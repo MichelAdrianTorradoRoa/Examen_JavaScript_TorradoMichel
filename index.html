@@ -12,45 +12,72 @@
     </header>
 
     <main>
-        <!-- Formulario para agregar y editar recetas -->
-        <section id="recipe-form-section">
+        <section>
             <h2>Añadir/Editar Receta</h2>
-            <form id="recipe-form">
-                <label for="recipe-name">Nombre de la Receta:</label>
-                <input type="text" id="recipe-name" required>
+            <form id="formato">
+                <label for="nombre">Nombre de la Receta:</label>
+                <input type="text" id="nombre" required>
 
-                <label for="recipe-ingredients">Ingredientes:</label>
-                <textarea id="recipe-ingredients" rows="4" required></textarea>
+                <label for="ingredientes">Ingredientes:</label>
+                <textarea id="ingredientes" rows="4" required></textarea>
 
-                <label for="recipe-instructions">Instrucciones:</label>
-                <textarea id="recipe-instructions" rows="4" required></textarea>
+                <label for="instrucciones">Instrucciones:</label>
+                <textarea id="instrucciones" rows="4" required></textarea>
 
-                <label for="recipe-category">Categoría:</label>
-                <select id="recipe-category">
-                    <option value="entrada">Entrada</option>
-                    <option value="plato principal">Plato Principal</option>
-                    <option value="postre">Postre</option>
+                <label for="categorias">Categoría:</label>
+                <select id="categorias">
+                    <option value="Desayuno">Desayuno</option>
+                    <option value="Almuerzo">Almuerzo</option>
+                    <option value="Cena">Cena</option>
+                    <option value="Postre">Postre</option>
                 </select>
 
-                <label for="cooking-time">Tiempo de Cocción (minutos):</label>
-                <input type="number" id="cooking-time" min="1" required>
+                <label for="cooking">Tiempo de Cocción (minutos):</label>
+                <input type="number" id="cooking" min="1" required>
+
+                <label for="numbers">Numero de porciones:</label>
+                <input type="number" id="numbers" required>
+
+                <label for="levels">Nivel de Dificultad:</label>
+                <select id="levels">
+                    <option value="Facil">Facil</option>
+                    <option value="Medio">Medio</option>
+                    <option value="Dificil">Dificil</option>
+                </select>
 
                 <button type="submit">Guardar Receta</button>
             </form>
         </section>
 
         <!-- Lista de recetas -->
-        <section id="recipe-list-section">
+        <section>
             <h2>Recetas Guardadas</h2>
-            <input type="text" id="search-bar" placeholder="Buscar recetas...">
-            <div id="recipe-list">
-                <!-- Aquí se mostrarán las recetas guardadas -->
-            </div>
+            <input type="text" id="nombre" placeholder="Buscar recetas...">
+
+            <label for="categoria">Filtro por Categoria:</label>
+            <select id="categoria">
+                <option value="Todos">Todos</option>
+                <option value="Desayuno">Desayuno</option>
+                <option value="Almuerzo">Almuerzo</option>
+                <option value="Cena">Cena</option>
+                <option value="Postre">Postre</option>
+            </select>
+
+            <label for="dificultad">Filtro por el nivel de Dificultad:</label>
+            <select id="dificultad">
+                <option value="Todos">Todos</option>
+                <option value="Facil">Facil</option>
+                <option value="Medio">Medio</option>
+                <option value="Dificil">Dificil</option>
+            </select>
+
+            <ul id="recursoList"></ul>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Gestión de Recetas</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
