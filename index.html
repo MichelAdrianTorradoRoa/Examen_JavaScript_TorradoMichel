@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Recetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Recetas</h1>
+    </header>
+
+    <main>
+        <!-- Formulario para agregar y editar recetas -->
+        <section id="recipe-form-section">
+            <h2>Añadir/Editar Receta</h2>
+            <form id="recipe-form">
+                <label for="recipe-name">Nombre de la Receta:</label>
+                <input type="text" id="recipe-name" required>
+
+                <label for="recipe-ingredients">Ingredientes:</label>
+                <textarea id="recipe-ingredients" rows="4" required></textarea>
+
+                <label for="recipe-instructions">Instrucciones:</label>
+                <textarea id="recipe-instructions" rows="4" required></textarea>
+
+                <label for="recipe-category">Categoría:</label>
+                <select id="recipe-category">
+                    <option value="entrada">Entrada</option>
+                    <option value="plato principal">Plato Principal</option>
+                    <option value="postre">Postre</option>
+                </select>
+
+                <label for="cooking-time">Tiempo de Cocción (minutos):</label>
+                <input type="number" id="cooking-time" min="1" required>
+
+                <button type="submit">Guardar Receta</button>
+            </form>
+        </section>
+
+        <!-- Lista de recetas -->
+        <section id="recipe-list-section">
+            <h2>Recetas Guardadas</h2>
+            <input type="text" id="search-bar" placeholder="Buscar recetas...">
+            <div id="recipe-list">
+                <!-- Aquí se mostrarán las recetas guardadas -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gestión de Recetas</p>
+    </footer>
+</body>
+</html>
