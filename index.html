@@ -12,7 +12,7 @@
     </header>
 
     <main>
-        <section>
+        <section id="recipe-form-section">
             <h2>Añadir/Editar Receta</h2>
             <form id="formato">
                 <label for="nombre">Nombre de la Receta:</label>
@@ -35,14 +35,14 @@
                 <label for="cooking">Tiempo de Cocción (minutos):</label>
                 <input type="number" id="cooking" min="1" required>
 
-                <label for="numbers">Numero de porciones:</label>
+                <label for="numbers">Número de porciones:</label>
                 <input type="number" id="numbers" required>
 
                 <label for="levels">Nivel de Dificultad:</label>
                 <select id="levels">
-                    <option value="Facil">Facil</option>
+                    <option value="Facil">Fácil</option>
                     <option value="Medio">Medio</option>
-                    <option value="Dificil">Dificil</option>
+                    <option value="Dificil">Difícil</option>
                 </select>
 
                 <button type="submit">Guardar Receta</button>
@@ -50,11 +50,11 @@
         </section>
 
         <!-- Lista de recetas -->
-        <section>
+        <section id="recipe-list-section">
             <h2>Recetas Guardadas</h2>
             <input type="text" id="nombres" placeholder="Buscar recetas...">
 
-            <label for="Filtrocategoria">Filtro por Categoria:</label>
+            <label for="Filtrocategoria">Filtro por Categoría:</label>
             <select id="Filtrocategoria">
                 <option value="Todos">Todos</option>
                 <option value="Desayuno">Desayuno</option>
@@ -63,12 +63,12 @@
                 <option value="Postre">Postre</option>
             </select>
 
-            <label for="Filtrolevel">Filtro por el nivel de Dificultad:</label>
-            <select id="Filtrolevel">
+            <label for="Filtrolevels">Filtro por Nivel de Dificultad:</label>
+            <select id="Filtrolevels">
                 <option value="Todos">Todos</option>
-                <option value="Facil">Facil</option>
+                <option value="Facil">Fácil</option>
                 <option value="Medio">Medio</option>
-                <option value="Dificil">Dificil</option>
+                <option value="Dificil">Difícil</option>
             </select>
 
             <ul id="recursoList"></ul>

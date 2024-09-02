@@ -30,7 +30,16 @@ section {
     width: 100%;
     margin-bottom: 20px;
 }
-
+#recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+#recursoList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
 #recipe-form-section, #recipe-list-section {
     background-color: lightgoldenrodyellow;
     padding: 20px;
